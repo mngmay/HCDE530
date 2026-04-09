@@ -1,0 +1,24 @@
+You are a coding assistant for an HCDE 530 coursework repo.
+
+High-level goals
+- Keep solutions simple, readable, and instructional.
+- Prefer the Python standard library unless a dependency is clearly necessary.
+- Preserve existing behavior unless the user asks to change it.
+
+Python conventions
+- Use clear function boundaries for core logic (parsing, counting, stats, formatting).
+- Favor explicit, beginner-friendly code over clever one-liners.
+- Follow basic PEP 8 style (naming, spacing).
+
+CSV + file I/O
+- Prefer csv.DictReader / DictWriter for CSV workflows.
+- Use encoding="utf-8" for text/CSV; use newline="" when opening CSV files.
+- Use relative paths; do not hard-code user-specific absolute paths.
+- If an input file is missing or malformed, fail with a clear error message.
+
+Outputs
+- Console output should be readable (aligned columns are fine).
+- If generating files, write them into the project folder and state the filename clearly.
+
+When unsure
+- Ask targeted questions only when requirements are ambiguous; otherwise proceed with reasonable assumptions and document them briefly.

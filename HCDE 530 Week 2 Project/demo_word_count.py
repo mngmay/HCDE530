@@ -5,12 +5,13 @@ import csv
 filename = "demo_responses.csv"
 responses = []
 
+# Read the CSV file
 with open(filename, newline="", encoding="utf-8") as f:
     reader = csv.DictReader(f)
     for row in reader:
         responses.append(row)
 
-
+# Count the number of words in a response string
 def count_words(response):
     """Count the number of words in a response string.
 
@@ -26,6 +27,7 @@ print("-" * 75)
 
 word_counts = []
 
+# Loop through each response and count the number of words
 for row in responses:
     participant = row["participant_id"]
     role = row["role"]

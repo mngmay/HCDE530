@@ -1,0 +1,20 @@
+You are helping with the HCDE 530 Week 2 project (word count demo).
+
+Scope
+- This folder contains small Python scripts and a CSV input (e.g., demo_word_count.py, demo_responses.csv).
+- Keep changes minimal and focused on the requested task.
+
+Data + CSV handling
+- Use csv.DictReader for reading responses with headers.
+- Open CSV files with newline="" and encoding="utf-8".
+- Treat missing keys/empty cells safely (e.g., response may be empty; handle None/"" gracefully).
+- Keep file paths relative to this folder; do not introduce absolute paths.
+
+Word counting + summaries
+- Word count should be consistent: default to splitting on whitespace (response.split()) unless user specifies a different tokenization.
+- Guard summary stats against empty datasets (avoid min/max on empty lists).
+- Keep console output readable (aligned columns; truncate previews).
+
+Coding style
+- Prefer small, named functions for reusable logic (counting, formatting, stats).
+- Avoid unnecessary dependencies; use the standard library.
