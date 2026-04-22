@@ -1,0 +1,5 @@
+I'm comfortable navigating directories and running scripts in order to see if they run or generate error messages. By running python3 [script] I was able to see the survey messy file produced a ValueError: invalid literal for int() with base 10: 'fifteen'. The error code told me it was in line 30, and I could examine the code there. Using the Cursor agent, I was able to ask it how to fix the error and review the explanation (string vs int data type) and propoesd solution. It guided me to review proposed changes in the file before I manually opted to keep anything. As part of the changes, I accepted a change to create a parser to clean the data that it prints and was able to run the script successfully. 
+
+I know to commit changes and leave concise descriptive comments on the changes I push to my branch.
+
+Note: I was unable to attend the live class and the recordings had some issues, so this is what I was able to review and execute on my own. I'll be asking questions in the next class to confirm my understanding.
