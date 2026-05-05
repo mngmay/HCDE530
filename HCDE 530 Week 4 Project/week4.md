@@ -15,9 +15,15 @@ This week challenged me to move beyond local CSV work and connect a Python scrip
 - I saved the returned data as a JSON file in the same directory as the script, rather than depending on the current working directory.
 - That makes the project more portable and easier to inspect in the Week 4 folder.
 
-### Things I'd do differently / what I'd learn
+### Challenges and agent interaction
 
-- Consider making my prompt more flexible and scalable, such as the input or output quantities, so that the agent and code can more easily adapt to parameter changes. Be mindful of data types, shapes, etc.
+- My original script had limitations on how many objects the API returned; I could request 50 results, but the endpoint only returned 25 in a single call.
+- The agent struggled to adapt the existing code and sometimes gave false confirmation that my logic was correct, blaming the behavior on an API error or limitation instead of the code restrictions.
+- Scrapping the earlier code and starting fresh with a clearer prompt worked better, making it easier to build a predictable request and verify the output.
+
+### Things I'd do differently / What I learned
+
+- Consider making my prompt more flexible and scalable, such as the input or output quantities, so that the agent and code can more easily adapt to parameter changes. Be mindful of data types, shapes, and when the helper agent is giving advice versus making assumptions.
 
 ### Connection to this week’s work
 
